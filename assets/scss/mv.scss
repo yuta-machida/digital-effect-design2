@@ -1,0 +1,24 @@
+.mv {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .mv__bg-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .mv__svg {
+    width: 100%;
+    height: 100%;
+  }
+  .mv__svg-base path {
+    fill: #000;
+  }
+  .mv__svg-mask path {
+    fill: none;
+    stroke-width: 10px;
+  }
+}
