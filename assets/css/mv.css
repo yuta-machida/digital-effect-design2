@@ -1,13 +1,38 @@
+body {
+  margin: 0;
+}
+
 .mv {
   width: 100vw;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .mv .mv__bg-image {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.mv .mv__slide-animation-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.mv .mv__slide-animation-wrapper .mv__slide-animation-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  aspect-ratio: 16/9;
+  position: absolute;
+  top: 0;
+}
+.mv .mv__slide-animation-wrapper .mv__slide-animation-container .mv__slide-box {
+  height: 100%;
+  background-size: 500% auto;
+  background-repeat: no-repeat;
+  flex: 1;
 }
 .mv .mv__svg {
   width: 100%;
