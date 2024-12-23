@@ -11,8 +11,10 @@ export function vivusAnimation(id: string): void {
     });
     vivus.play();
 
-    setTimeout(() => {
-      svg.style.opacity = "0";
-    }, 5000);
+    if (id !== "svg-message") {
+      setTimeout(() => {
+        svg.style.opacity = "0";
+      }, 5000);
+    }
   }
 }

@@ -3,6 +3,7 @@ import { reductionImageAnimation } from "./animation/reductionAnimation";
 import { slideAnimation } from "./animation/slideAnimation";
 import { fadeInAnimation } from "./animation/fadeInAnimation";
 import { vivusAnimation } from "./animation/vivusAnimation";
+import { gradationAnimation } from "./animation/gradationAnimation";
 
 document.addEventListener("DOMContentLoaded", () => {
   // 1セット
@@ -44,4 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     slideAnimation(variable.img_bring_1);
   }, 18000);
+  // グラデーション
+  setTimeout(() => {
+    gradationAnimation();
+  }, 23000);
 });

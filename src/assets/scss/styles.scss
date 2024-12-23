@@ -58,6 +58,35 @@
     stroke: #fff;
     stroke-width: 10px;
   }
+
+  // -------------- グラデーション用 -------------- //
+  .mv__gradation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    background-color: #fff;
+    background-image: radial-gradient(at 0% 0%, #c9cead, transparent),
+      radial-gradient(at 0% 100%, #41b048, transparent),
+      radial-gradient(at 100% 0%, #4bc29d, transparent),
+      radial-gradient(at 100% 100%, #68be73, transparent);
+    animation-name: gradationAnimation;
+    animation-duration: 1s;
+
+    .mv__gradation-text {
+      font-family: "Zen Kaku Gothic New", serif;
+      font-size: 32px;
+      font-weight: 300;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      transition: 0.5s;
+      transform: translate(-50%, 30px);
+    }
+  }
 }
 @keyframes firstAnimation {
   from {
@@ -65,5 +94,22 @@
   }
   to {
     transform: scale(1);
+  }
+}
+@keyframes gradationAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  20% {
+    background-position: 100% 0%;
+  }
+  60% {
+    background-position: 0% 0%;
+  }
+  80% {
+    background-position: 100% 60%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }

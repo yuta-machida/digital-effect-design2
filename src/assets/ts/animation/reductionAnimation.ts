@@ -8,11 +8,14 @@ export function reductionImageAnimation(imgUrl: string): void {
 
   if (reductionImageContainer) {
     reductionImageContainer.style.backgroundImage = `url(${imgUrl})`;
-    const keyframes: Keyframe[] = [
-      { transform: "scale(1.3)", opacity: 0 },
-      { transform: "scale(1)", opacity: 1 },
+    const fadeInKeyframe: Keyframe[] = [{ opacity: 0 }, { opacity: 1 }];
+    const reductionKeyframe: Keyframe[] = [
+      { transform: "scale(1.3)" },
+      { transform: "scale(1)" },
     ];
-    const options: KeyframeAnimationOptions = { duration: 5000 };
-    reductionImageContainer.animate(keyframes, options);
+    const fadeInOption: KeyframeAnimationOptions = { duration: 1000 };
+    const reductionOption: KeyframeAnimationOptions = { duration: 5000 };
+    reductionImageContainer.animate(fadeInKeyframe, fadeInOption);
+    reductionImageContainer.animate(reductionKeyframe, reductionOption);
   }
 }
