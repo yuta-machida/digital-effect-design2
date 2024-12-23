@@ -9,44 +9,43 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1セット
   setTimeout(() => {
     slideAnimation();
-  }, 2000);
+  }, 3000);
   setTimeout(() => {
     fadeInAnimation(variable.img_bottle_1);
-  }, 3000);
+  }, 4000);
   // 手書きアニメーション
   setTimeout(() => {
     vivusAnimation("svg-bottle");
-  }, 3000);
-
-  setTimeout(() => {
-    slideAnimation(variable.img_bottle_2);
   }, 5000);
   setTimeout(() => {
+    slideAnimation(variable.img_bottle_2);
+  }, 8000);
+  setTimeout(() => {
     slideAnimation(variable.img_bottle_1);
-  }, 7000);
+  }, 12000);
 
   // 2セット
   setTimeout(() => {
     reductionImageAnimation(variable.img_main_bring);
-  }, 10000);
+  }, 16000);
   setTimeout(() => {
     slideAnimation();
-  }, 13000);
+  }, 20000);
   setTimeout(() => {
     fadeInAnimation(variable.img_bring_1);
-  }, 14000);
+  }, 21000);
   // 手書きアニメーション
   setTimeout(() => {
     vivusAnimation("svg-clothes");
-  }, 14000);
+  }, 22000);
   setTimeout(() => {
     slideAnimation(variable.img_bring_2);
-  }, 16000);
+  }, 25000);
   setTimeout(() => {
     slideAnimation(variable.img_bring_1);
-  }, 18000);
+  }, 29000);
   // グラデーション
   setTimeout(() => {
     gradationAnimation();
-  }, 23000);
+  }, 33000);
 });

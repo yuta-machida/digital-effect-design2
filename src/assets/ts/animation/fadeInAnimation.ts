@@ -8,7 +8,7 @@ export function fadeInAnimation(imgUrl: string): void {
   if (fadeInImageContainer) {
     fadeInImageContainer.style.backgroundImage = `url(${imgUrl})`;
     const keyframes: Keyframe[] = [{ opacity: 0 }, { opacity: 1 }];
-    const options: KeyframeAnimationOptions = { duration: 300 };
+    const options: KeyframeAnimationOptions = { duration: 500 };
     fadeInImageContainer.animate(keyframes, options);
   }
 }

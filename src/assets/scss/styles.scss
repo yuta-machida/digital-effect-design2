@@ -22,7 +22,7 @@
       &.--first-animation {
         background-image: url("/src/assets/img/main_bottle.png");
         animation-name: firstAnimation;
-        animation-duration: 7000ms;
+        animation-duration: 10000ms;
       }
     }
     // スライドアニメーション用（要素はslideAnimation.tsで生成)
@@ -83,7 +83,7 @@
       top: 50%;
       left: 50%;
       opacity: 0;
-      transition: 0.5s;
+      transition: 1.8s;
       transform: translate(-50%, 30px);
     }
   }
