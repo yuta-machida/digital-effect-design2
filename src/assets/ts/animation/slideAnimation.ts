@@ -1,12 +1,11 @@
+import { animationWrapper } from "../variable";
+
 // div要素を作成する関数
-function createSlideBox(imgUrl?: string): HTMLDivElement[] {
+function createSlideAnimationContainer(imgUrl?: string): HTMLDivElement[] {
   const slideBox: HTMLDivElement[] = [];
-  const slideAnimationWrapper: HTMLElement | null = document.querySelector(
-    ".mv__slide-animation-wrapper"
-  );
   const slideAnimationContainer: HTMLElement = document.createElement("div");
   slideAnimationContainer.classList.add("mv__slide-animation-container");
-  slideAnimationWrapper?.appendChild(slideAnimationContainer);
+  animationWrapper?.appendChild(slideAnimationContainer);
   const color: string[] = [
     "#4B8A70",
     "#56927A",
@@ -38,7 +37,7 @@ function createSlideBox(imgUrl?: string): HTMLDivElement[] {
 
 // スライドアニメーション
 export function slideAnimation(imgUrl?: string): void {
-  const div: HTMLDivElement[] = createSlideBox(imgUrl);
+  const div: HTMLDivElement[] = createSlideAnimationContainer(imgUrl);
   const duration: number = 100;
   let animationDelay: number = 0;
 
