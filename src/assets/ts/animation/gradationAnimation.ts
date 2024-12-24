@@ -17,6 +17,6 @@ export function gradationAnimation(): void {
   if (text) {
     setTimeout(() => {
       text.style.opacity = "1";
-    }, 5000);
+    }, 3000);
   }
 }
