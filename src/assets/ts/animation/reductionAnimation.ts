@@ -1,6 +1,6 @@
 import { animationWrapper } from "../variable";
 
-// 背景画像が縮小されるアニメーション
+// 背景画像が縮小するアニメーション
 export function reductionImageAnimation(imgUrl: string): void {
   const reductionImageContainer = document.createElement("div");
   reductionImageContainer.classList.add("mv__image-animation-container");

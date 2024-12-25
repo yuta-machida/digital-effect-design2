@@ -1,5 +1,6 @@
 import { animationWrapper } from "../variable";
 
+// 背景画像をフェードインで表示させるアニメーション
 export function fadeInAnimation(imgUrl: string): void {
   const fadeInImageContainer = document.createElement("div");
   fadeInImageContainer.classList.add("mv__image-animation-container");

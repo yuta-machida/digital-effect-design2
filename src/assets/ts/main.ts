@@ -6,8 +6,6 @@ import { vivusAnimation } from "./animation/vivusAnimation";
 import { gradationAnimation } from "./animation/gradationAnimation";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 画面サイズを監視してスライドアニメーションを切り替え
-
   // 1セット
   setTimeout(() => {
     slideAnimation();
