@@ -107,6 +107,9 @@ body {
     height: 20%;
     background-size: 100% auto;
   }
+  .mv .mv__svg {
+    transform: scale(1.3);
+  }
   .mv .mv__gradation .mv__gradation-text {
     font-size: 16px;
   }
