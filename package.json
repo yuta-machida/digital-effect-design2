@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:ts": "tsc --watch",
+    "build:ts": "tsc",
     "build:webpack": "webpack",
-    "build": "run-p build:ts build:webpack"
+    "build": "npm run build:ts && npm run build:webpack",
+    "watch": "tsc --watch & webpack --watch"
   },
   "author": "",
   "license": "ISC",
@@ -18,7 +19,7 @@
     "stylelint-config-standard": "^36.0.1",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2",
+    "typescript": "^5.7.3",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4"
   },

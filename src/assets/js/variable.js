@@ -1,9 +1,9 @@
 export const mv = document.querySelector(".mv");
 export const animationWrapper = document.querySelector(".mv__animation-wrapper");
-export const img_bottle_1 = "/src/assets/img/bottle_1.png";
-export const img_bottle_2 = "/src/assets/img/bottle_2.png";
-export const img_bring_1 = "/src/assets/img/bring_1.png";
-export const img_bring_2 = "/src/assets/img/bring_2.png";
-export const img_main_bottle = "/src/assets/img/main_bottle.png";
-export const img_main_bring = "/src/assets/img/main_bring.png";
+export const img_bottle_1 = "./src/assets/img/bottle_1.png";
+export const img_bottle_2 = "./src/assets/img/bottle_2.png";
+export const img_bring_1 = "./src/assets/img/bring_1.png";
+export const img_bring_2 = "./src/assets/img/bring_2.png";
+export const img_main_bottle = "./src/assets/img/main_bottle.png";
+export const img_main_bring = "./src/assets/img/main_bring.png";
 export const mediaQuery = window.matchMedia("(min-width: 768px)");
