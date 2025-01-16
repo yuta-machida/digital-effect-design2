@@ -23,7 +23,7 @@ body {
   position: absolute;
 }
 .mv .mv__animation-wrapper .mv__image-animation-container.--first-animation {
-  background-image: url("/src/assets/img/main_bottle.png");
+  background-image: url("./src/assets/img/main_bottle.png");
   animation-name: firstAnimation;
   animation-duration: 10000ms;
 }
